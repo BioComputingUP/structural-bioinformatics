@@ -1,15 +1,16 @@
 #!/usr/bin/env python
 
 # **** WARNING ****
-# Unless you are able to compile pymol and install it in the local environment (difficult)
-# In order to run this script with the Pymol version installed on your system you have to exit the virtual environment
-# for Pipenv just type "deactivate"
+# For some Ubuntu versions is not possible to install Pymol with Conda
 
-# **** WARNING MacOS only ****
+# To run this script with the Pymol version installed on your system you have to exit the virtual environment
+# for Conda just type "conda deactivate"
+
+# **** WARNING (MacOS only) ****
 # PyMOL and Python scripts only works if installed with the Homebrew package manager
 
 # To execute a Python script (like this one):
-# pymol pymol_lines.py
+# python pymol_lines.py
 
 
 import pymol
@@ -72,7 +73,6 @@ cmd.load_cgo(obj, obj_name)
 cmd.set("cgo_line_width", float(3), obj_name)
 
 cmd.orient(pdb_id)  # Set the origin to full protein
-
 
 
 # *** Exercises ****

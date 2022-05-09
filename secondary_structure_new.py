@@ -2,7 +2,8 @@
 
 '''
 Secondary structure
-Repository
+Repository (https://github.com/cmbi/hssp)
+
 https://github.com/cmbi/dssp
 
 Install dependencies
